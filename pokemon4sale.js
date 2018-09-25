@@ -46,7 +46,7 @@ function completeTransaction() {
 // Return back to market if use does not continue with purchase
 function returnToMarket() {
     console.log("Returning to market...");
-    setTimeout(function () { market() }, 2000);
+    setTimeout(market, 1500);
 };
 
 // Initialize marketplace with listings
@@ -107,7 +107,7 @@ function market() {
                 }
             ]).then(answers => {
                 if (answers.one > res[x].stock_quanity) {
-                    console.log("Sorry. We do not have that many.")
+                    console.log(chalk.redBright("Sorry. We do not have that many."));
                     goBack();
                 }
                 else {
@@ -138,125 +138,55 @@ function market() {
             // Shows user their total (price for each Pokemon * amount user wants to buy)
             switch (answers.selectBuy) {
                 case "1":
-                    if (answers.selectBuy === "1") {
-                        let x = 0;
-                        purchase(x);
-                        break;
-                    }
                 case "bulbasaur":
-                    if (answers.selectBuy === "bulbasaur") {
-                        let x = 0;
-                        purchase(x);
-                        break;
-                    };
+                    x = 0;
+                    purchase(x);
+                    break;
                 case "2":
-                    if (answers.selectBuy === "2") {
-                        let x = 1;
-                        purchase(x);
-                        break;
-                    };
                 case "ivysaur":
-                    if (answers.selectBuy === "ivysaur") {
-                        let x = 1;
-                        purchase(x);
-                        break;
-                    };
+                    x = 1;
+                    purchase(x);
+                    break;
                 case "3":
-                    if (answers.selectBuy === "3") {
-                        let x = 2;
-                        purchase(x);
-                        break;
-                    };
                 case "venusaur":
-                    if (answers.selectBuy === "venusaur") {
-                        let x = 3;
-                        purchase(x);
-                        break;
-                    };
+                    x = 3;
+                    purchase(x);
+                    break;
                 case "4":
-                    if (answers.selectBuy === "4") {
-                        let x = 3;
-                        purchase(x);
-                        break;
-                    };
                 case "charmander":
-                    if (answers.selectBuy === "charmander") {
-                        let x = 3;
-                        purchase(x);
-                        break;
-                    };
+                    x = 3;
+                    purchase(x);
+                    break;
                 case "5":
-                    if (answers.selectBuy === "5") {
-                        let x = 4;
-                        purchase(x);
-                        break;
-                    };
                 case "chameleon":
-                    if (answers.selectBuy === "chameleon") {
-                        let x = 4;
-                        purchase(x);
-                        break;
-                    };
+                    x = 4;
+                    purchase(x);
+                    break;
                 case "6":
-                    if (answers.selectBuy === "6") {
-                        let x = 5;
-                        purchase(x);
-                        break;
-                    };
                 case "charizard":
-                    if (answers.selectBuy === "charizard") {
-                        let x = 5;
-                        purchase(x);
-                        break;
-                    };
+                    x = 5;
+                    purchase(x);
+                    break;
                 case "7":
-                    if (answers.selectBuy === "7") {
-                        let x = 6;
-                        purchase(x);
-                        break;
-                    };
                 case "squirtle":
-                    if (answers.selectBuy === "squirtle") {
-                        let x = 6;
-                        purchase(x);
-                        break;
-                    };
+                    x = 6;
+                    purchase(x);
+                    break;
                 case "8":
-                    if (answers.selectBuy === "8") {
-                        let x = 7;
-                        purchase(x);
-                        break;
-                    };
                 case "wartortle":
-                    if (answers.selectBuy === "wartortle") {
-                        let x = 7;
-                        purchase(x);
-                        break;
-                    };
+                    x = 7;
+                    purchase(x);
+                    break;
                 case "9":
-                    if (answers.selectBuy === "9") {
-                        let x = 8;
-                        purchase(x);
-                        break;
-                    };
                 case "blastoise":
-                    if (answers.selectBuy === "blastoise") {
-                        let x = 8;
-                        purchase(x);
-                        break;
-                    };
+                    x = 8;
+                    purchase(x);
+                    break;
                 case "10":
-                    if (answers.selectBuy === "10") {
-                        let x = 9;
-                        purchase(x);
-                        break;
-                    };
                 case "pikachu":
-                    if (answers.selectBuy === "pikachu") {
-                        let x = 9;
-                        purchase(x);
-                        break;
-                    };
+                    x = 9;
+                    purchase(x);
+                    break;
                 default: console.log("Sorry we do not have that Pokemon");
                     goBack();
             };
