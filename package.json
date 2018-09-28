@@ -1,0 +1,26 @@
+{
+  "name": "pokemon4sale",
+  "version": "1.0.0",
+  "description": "Backend application (Pokemon blackmarket) made with Node.JS",
+  "main": "pokemon4sale.js",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "inquirer": "^6.2.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyblockstacking/pokemon4sale.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyblockstacking/pokemon4sale/issues"
+  },
+  "homepage": "https://github.com/kyblockstacking/pokemon4sale#readme"
+}
