@@ -16,3 +16,5 @@ Pokemon Blackmarket Warehouse
 password: admin
 
 ------------------------------
+
+PREVIEW PICTURES URL: https://imgur.com/a/dRNN1E2
